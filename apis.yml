@@ -1,9 +1,29 @@
 aid: sesame
 name: Sesame
-description: Sesame is a company surfaced as a portfolio company of general-catalyst, gv, matrix-partners,
-  redpoint-ventures, spark-capital, sv-angel and added to the API Evangelist network as a stub for enrichment.
-  This profile is a lead awaiting the enrichment pipeline.
+description: Sesame is a direct-to-consumer telehealth marketplace that connects patients
+  with board-certified clinicians for affordable, transparent, cash-pay virtual and in-person
+  care. Patients browse and book pay-per-visit appointments starting around $34 across
+  urgent care, prescription refills, weight loss and GLP-1 treatment, mental health, women's
+  health, dermatology, pediatrics and more, with no insurance required and up-front pricing.
+  The company also offers a SesamePlus membership, a mobile app, provider tooling for listing
+  a practice, and Sesame @ Work employer plans. Sesame is backed by General Catalyst, GV,
+  Matrix Partners, Redpoint Ventures, Spark Capital and SV Angel. As of this enrichment pass
+  Sesame publishes a consumer web and mobile experience but no public developer API, developer
+  portal, SDKs, or OpenAPI surface; its public GitHub organization hosts internal utility
+  libraries rather than first-party client SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://sesamecare.com/assets/sesame-twitter.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -17,9 +37,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Telehealth
+- Healthcare
+- Digital Health
+- Telemedicine
+- Marketplace
+- Consumer Health
+- Prescriptions
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -28,4 +55,23 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: sesamecare.com
+  url: https://sesamecare.com
+- type: Blog
+  url: https://sesamecare.com/blog
+- type: Support
+  url: https://sesamecare.com/faq
+- type: SignUp
+  url: https://sesamecare.com/signup
+- type: TermsOfService
+  url: https://sesamecare.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://sesamecare.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/sesamecare
+- type: DomainSecurity
+  url: security/sesame-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
