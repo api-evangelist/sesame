@@ -1,0 +1,223 @@
+generated: '2026-08-15'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=@sesamecare-oss + https://github.com/sesamecare
+note: >-
+  Sesame publishes 17 first-party packages to npm under the @sesamecare-oss scope, mirrored
+  from the verified github.com/sesamecare organization. IMPORTANT: none of these is an API
+  client SDK. They are general-purpose Node/TypeScript infrastructure utilities Sesame
+  open-sourced out of its own platform (distributed locks, Redis helpers, OpenTelemetry
+  metrics, rate limiting, cursor pagination, rule DSLs, US postal-code lookup, prompt
+  templating). Because no package wraps a Sesame API, this artifact deliberately carries NO
+  `SDKs` pointer in apis.yml — the sdk_count ergonomics check measures client libraries for
+  the provider's API, and crediting it here would assert a developer program Sesame does not
+  run. Maven Central (g:com.sesamecare) returned 0 results and pypi.org/pypi/sesamecare/json
+  returned 404, so the two Java repositories in the GitHub org are source-only.
+registries_probed:
+- registry: npm
+  query: scope @sesamecare-oss
+  result: 17 packages
+- registry: npm
+  query: scope @sesamecare
+  result: 0 packages (scope not published)
+- registry: maven-central
+  query: 'g:com.sesamecare'
+  result: 0 artifacts
+- registry: pypi
+  query: sesamecare
+  result: 404
+packages:
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/redlock'
+  url: https://www.npmjs.com/package/@sesamecare-oss/redlock
+  install: npm install @sesamecare-oss/redlock
+  official: true
+  api_client: false
+  version: 1.4.0
+  published: '2025-01-20'
+  repository: https://github.com/sesamecare/redlock
+  description: A modern node.js redlock implementation for distributed redis locks
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/confit'
+  url: https://www.npmjs.com/package/@sesamecare-oss/confit
+  install: npm install @sesamecare-oss/confit
+  official: true
+  api_client: false
+  version: 2.2.1
+  published: '2024-02-14'
+  repository: https://github.com/sesamecare/confit
+  description: Typed environment-aware configuration; a modern rewrite of confit
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/opentelemetry-node-metrics'
+  url: https://www.npmjs.com/package/@sesamecare-oss/opentelemetry-node-metrics
+  install: npm install @sesamecare-oss/opentelemetry-node-metrics
+  official: true
+  api_client: false
+  version: 3.0.0
+  published: '2026-02-17'
+  repository: https://github.com/sesamecare/opentelemetry-node-metrics
+  description: A modernized set of node metrics for OpenTelemetry
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/playwright-prometheus-reporter'
+  url: https://www.npmjs.com/package/@sesamecare-oss/playwright-prometheus-reporter
+  install: npm install @sesamecare-oss/playwright-prometheus-reporter
+  official: true
+  api_client: false
+  version: 1.0.6
+  published: '2023-08-03'
+  repository: https://github.com/sesamecare/playwright-prometheus-reporter
+  description: A custom reporter for Playwright that exposes and pushes Prometheus metrics
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/rule-evaluator'
+  url: https://www.npmjs.com/package/@sesamecare-oss/rule-evaluator
+  install: npm install @sesamecare-oss/rule-evaluator
+  official: true
+  api_client: false
+  version: 1.0.0
+  published: '2024-05-12'
+  repository: https://github.com/sesamecare/rule-evaluator
+  description: A dynamic rule evaluation DSL with lazy data resolution, React Native compatible
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/async-pool'
+  url: https://www.npmjs.com/package/@sesamecare-oss/async-pool
+  install: npm install @sesamecare-oss/async-pool
+  official: true
+  api_client: false
+  version: 1.0.5
+  published: '2026-01-10'
+  repository: https://github.com/sesamecare/async-pool
+  description: Process items from an async generator with a configurable concurrency limit
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/async-rule-evaluator'
+  url: https://www.npmjs.com/package/@sesamecare-oss/async-rule-evaluator
+  install: npm install @sesamecare-oss/async-rule-evaluator
+  official: true
+  api_client: false
+  version: 1.2.0
+  published: '2023-12-03'
+  repository: https://github.com/sesamecare/ts-async-rule-evaluator
+  description: A rule evaluation DSL supporting lazy and asynchronous data resolution
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/redis'
+  url: https://www.npmjs.com/package/@sesamecare-oss/redis
+  install: npm install @sesamecare-oss/redis
+  official: true
+  api_client: false
+  version: 1.1.2
+  published: '2025-12-09'
+  repository: https://github.com/sesamecare/redis
+  description: Redis related utility functions
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/multi-source-pager'
+  url: https://www.npmjs.com/package/@sesamecare-oss/multi-source-pager
+  install: npm install @sesamecare-oss/multi-source-pager
+  official: true
+  api_client: false
+  version: 4.1.0
+  published: '2025-05-02'
+  repository: https://github.com/sesamecare/multi-source-pager
+  description: Assemble multiple cursor-based paginated sources into a single paginated source
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/rate-limit'
+  url: https://www.npmjs.com/package/@sesamecare-oss/rate-limit
+  install: npm install @sesamecare-oss/rate-limit
+  official: true
+  api_client: false
+  version: 3.0.1
+  published: '2025-11-13'
+  repository: https://github.com/sesamecare/rate-limit
+  description: A multi-key rate limiter for TypeScript and Redis based on rate-limiter-flexible
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/us-postal-codes'
+  url: https://www.npmjs.com/package/@sesamecare-oss/us-postal-codes
+  install: npm install @sesamecare-oss/us-postal-codes
+  official: true
+  api_client: false
+  version: 2.0.2
+  published: '2026-04-10'
+  repository: https://github.com/sesamecare/us-postal-codes
+  description: Lookup city, state and geolocation by US postal code
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/ai-templating'
+  url: https://www.npmjs.com/package/@sesamecare-oss/ai-templating
+  install: npm install @sesamecare-oss/ai-templating
+  official: true
+  api_client: false
+  version: 2.3.0
+  published: '2026-07-07'
+  repository: https://github.com/sesamecare/ai-templating
+  description: Manage prompts and skills with Langfuse and the local filesystem using Handlebars templating
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/xml-deep-merge'
+  url: https://www.npmjs.com/package/@sesamecare-oss/xml-deep-merge
+  install: npm install @sesamecare-oss/xml-deep-merge
+  official: true
+  api_client: false
+  version: 1.1.3
+  published: '2024-02-14'
+  repository: https://github.com/sesamecare/xml-deep-merge
+  description: Deeply merge multiple XML files into one file
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/typia-standalone-validator'
+  url: https://www.npmjs.com/package/@sesamecare-oss/typia-standalone-validator
+  install: npm install @sesamecare-oss/typia-standalone-validator
+  official: true
+  api_client: false
+  version: 2.0.6
+  published: '2025-11-06'
+  repository: https://github.com/sesamecare/typia-standalone-validator
+  description: Build a standalone validator using Typia and tsup
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/check-package-changes'
+  url: https://www.npmjs.com/package/@sesamecare-oss/check-package-changes
+  install: npm install @sesamecare-oss/check-package-changes
+  official: true
+  api_client: false
+  version: 1.1.1
+  published: '2024-02-14'
+  repository: https://github.com/sesamecare/check-package-changes
+  description: Compare a published package against local files
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/fetch-with-token'
+  url: https://www.npmjs.com/package/@sesamecare-oss/fetch-with-token
+  install: npm install @sesamecare-oss/fetch-with-token
+  official: true
+  api_client: false
+  version: 1.0.1
+  published: '2024-07-17'
+  repository: https://github.com/sesamecare/fetch-with-token
+  description: A fetch wrapper that manages an OAuth2-style token and atomic refresh of expired tokens
+- language: javascript
+  registry: npm
+  name: '@sesamecare-oss/to-clickhouse'
+  url: https://www.npmjs.com/package/@sesamecare-oss/to-clickhouse
+  install: npm install @sesamecare-oss/to-clickhouse
+  official: true
+  api_client: false
+  version: 1.10.3
+  published: '2024-08-22'
+  repository: https://github.com/sesamecare/to-clickhouse
+  description: Synchronize data between a relational store such as Postgres and a ClickHouse database
+summary:
+  total: 17
+  official: 17
+  api_clients: 0
+  languages: [javascript]
+  registries: [npm]
+  most_recent_release: '2026-07-07'
+  oldest_latest_release: '2023-08-03'

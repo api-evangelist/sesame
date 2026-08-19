@@ -1,0 +1,162 @@
+generated: '2026-08-15'
+method: probed
+source: live HTTP probes of every Sesame host referenced by sesamecare.com
+note: >-
+  RECORDED ABSENCE. Every /.well-known/ path was probed on all six Sesame-controlled hosts
+  and NOT ONE returned a real document. No WellKnown, SecurityTxt, APICatalog or AgentCard
+  pointer is emitted from this file, and none should be added later — the pointer asserts
+  that the provider serves that surface, and Sesame does not.
+  SOFT-200 WARNING: doctors.sesamecare.com (the clinician portal) is a Next.js single-page
+  app with a catch-all route. It answers HTTP 200 with the same HTML application shell for
+  EVERY /.well-known/* path, including paths that cannot exist. Those 200s are NOT documents
+  and are recorded below as misses with soft_200 true. sesamecare.com, api.sesamecare.com,
+  iam.sesamecare.com, ask.sesamecare.com, cdn.sesamecare.com and share.sesamecare.com all
+  return honest 404s.
+hosts_probed:
+- https://sesamecare.com
+- https://api.sesamecare.com
+- https://iam.sesamecare.com
+- https://doctors.sesamecare.com
+- https://ask.sesamecare.com
+- https://cdn.sesamecare.com
+- https://share.sesamecare.com
+documents:
+- host: sesamecare.com
+  path: /.well-known/security.txt
+  status: 404
+- host: sesamecare.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: sesamecare.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: sesamecare.com
+  path: /.well-known/api-catalog
+  status: 404
+- host: sesamecare.com
+  path: /.well-known/ai-plugin.json
+  status: 404
+- host: sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: sesamecare.com
+  path: /.well-known/agent.json
+  status: 404
+- host: api.sesamecare.com
+  path: /.well-known/security.txt
+  status: 404
+- host: api.sesamecare.com
+  path: /.well-known/openid-configuration
+  status: 404
+- host: api.sesamecare.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: api.sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: api.sesamecare.com
+  path: /.well-known/agent.json
+  status: 404
+- host: iam.sesamecare.com
+  path: /.well-known/openid-configuration
+  status: 404
+  note: identity host; publishes no OIDC discovery document
+- host: iam.sesamecare.com
+  path: /.well-known/oauth-authorization-server
+  status: 404
+- host: iam.sesamecare.com
+  path: /.well-known/security.txt
+  status: 404
+- host: iam.sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: iam.sesamecare.com
+  path: /.well-known/agent.json
+  status: 404
+- host: doctors.sesamecare.com
+  path: /.well-known/security.txt
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+  note: SPA catch-all returned the application shell, not a document
+- host: doctors.sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+  note: SPA catch-all returned the application shell, not a JSON AgentCard
+- host: doctors.sesamecare.com
+  path: /.well-known/agent.json
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+  note: SPA catch-all returned the application shell, not a JSON AgentCard
+- host: doctors.sesamecare.com
+  path: /.well-known/openid-configuration
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+- host: doctors.sesamecare.com
+  path: /.well-known/oauth-authorization-server
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+- host: doctors.sesamecare.com
+  path: /.well-known/api-catalog
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+- host: doctors.sesamecare.com
+  path: /.well-known/ai-plugin.json
+  status: 200
+  soft_200: true
+  content_type: text/html
+  hit: false
+- host: ask.sesamecare.com
+  path: /.well-known/security.txt
+  status: 404
+- host: ask.sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: ask.sesamecare.com
+  path: /.well-known/agent.json
+  status: 404
+- host: cdn.sesamecare.com
+  path: /.well-known/security.txt
+  status: 404
+- host: cdn.sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 404
+- host: share.sesamecare.com
+  path: /.well-known/security.txt
+  status: 404
+- host: share.sesamecare.com
+  path: /.well-known/agent-card.json
+  status: 404
+llms_txt:
+- host: sesamecare.com
+  path: /llms.txt
+  status: 404
+- host: doctors.sesamecare.com
+  path: /llms.txt
+  status: 200
+  soft_200: true
+  hit: false
+  note: SPA catch-all HTML shell
+- host: iam.sesamecare.com
+  path: /llms.txt
+  status: 404
+- host: ask.sesamecare.com
+  path: /llms.txt
+  status: 404
+summary:
+  paths_probed: 41
+  real_documents: 0
+  soft_200_shells: 8
+  pointers_emitted: []

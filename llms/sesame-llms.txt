@@ -1,0 +1,61 @@
+# Sesame
+
+> Sesame is a direct-to-consumer telehealth marketplace connecting patients with
+> board-certified clinicians for affordable, transparent, cash-pay virtual and in-person
+> care. Patients browse and book pay-per-visit appointments across urgent care, prescription
+> refills, weight loss and GLP-1 treatment, mental health, women's health, dermatology and
+> pediatrics, with no insurance required and up-front pricing.
+
+## API status
+
+Sesame publishes **no public developer API**. As of 2026-08-15 there is no developer portal,
+no API reference, no OpenAPI or AsyncAPI document, no SDK, no webhook catalog and no MCP
+server. Sesame operates a private GraphQL endpoint at `https://api.sesamecare.com/graphql`
+that backs its own consumer web and mobile applications: an unauthenticated GET returns
+HTTP 401, and an introspection POST is rejected by Apollo Server with
+`GraphQL introspection is not allowed by Apollo Server`. That endpoint is application
+infrastructure, not an offered product, and no schema is published anywhere.
+
+Partnership enquiries are handled by email at partners@sesamecare.com rather than through a
+developer program.
+
+## Docs
+
+- [Sesame](https://sesamecare.com): Consumer marketplace — browse services, clinicians and prices
+- [How Sesame works / about](https://sesamecare.com/about): Company overview
+- [FAQ](https://sesamecare.com/faq): Patient support and help centre
+- [Sesame Plus membership](https://sesamecare.com/join/membership): Membership pricing, $10.99/month or $99/year
+- [For clinicians](https://sesamecare.com/join/doctors): List a practice on the marketplace
+- [For employers](https://sesamecare.com/join/employers): Sesame @ Work employer plans
+- [Partner with Sesame](https://sesamecare.com/partners/partner-with-sesame): Partnership contact
+- [Blog](https://sesamecare.com/blog): Company and health writing
+- [Newsroom](https://sesamecare.com/partners/newsroom): Press
+- [Terms of Service](https://sesamecare.com/terms-of-service)
+- [Privacy Policy](https://sesamecare.com/privacy)
+
+## Open source
+
+Sesame maintains a verified GitHub organization and publishes 17 first-party Node/TypeScript
+packages to npm under the `@sesamecare-oss` scope. None of them is a client library for a
+Sesame API — they are general-purpose platform utilities.
+
+- [GitHub organization](https://github.com/sesamecare): 23 public repositories
+- [@sesamecare-oss/redlock](https://www.npmjs.com/package/@sesamecare-oss/redlock): Distributed Redis locks
+- [@sesamecare-oss/rate-limit](https://www.npmjs.com/package/@sesamecare-oss/rate-limit): Multi-key Redis rate limiter
+- [@sesamecare-oss/multi-source-pager](https://www.npmjs.com/package/@sesamecare-oss/multi-source-pager): Cursor pagination across sources
+- [@sesamecare-oss/opentelemetry-node-metrics](https://www.npmjs.com/package/@sesamecare-oss/opentelemetry-node-metrics): OpenTelemetry node metrics
+- [@sesamecare-oss/us-postal-codes](https://www.npmjs.com/package/@sesamecare-oss/us-postal-codes): US postal code lookup
+- [@sesamecare-oss/ai-templating](https://www.npmjs.com/package/@sesamecare-oss/ai-templating): Prompt and skill templating with Langfuse
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/apis.yml): APIs.json profile
+- [packages/sesame-packages.yml](https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/packages/sesame-packages.yml): npm package inventory
+- [plans/sesame-plans-pricing.yml](https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/plans/sesame-plans-pricing.yml): Consumer pricing and membership tiers
+- [well-known/sesame-well-known.yml](https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/well-known/sesame-well-known.yml): /.well-known/ probe record (all misses)
+- [security/sesame-domain-security.yml](https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/security/sesame-domain-security.yml): TLS/HSTS/SPF/DMARC probe
+
+---
+generated: 2026-08-15
+method: generated
+source: apis.yml + repo artifacts; /llms.txt returned HTTP 404 on sesamecare.com

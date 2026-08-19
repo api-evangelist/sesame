@@ -1,0 +1,61 @@
+generated: '2026-08-15'
+method: searched
+source: https://sesamecare.com/join/membership
+note: >-
+  These are CONSUMER plans, not API plans. Sesame publishes no developer program, so there is
+  no API pricing, no metered tier and no quota to record. What it does publish is a
+  transparent consumer price model: pay-per-visit cash prices listed on each service page,
+  plus one optional membership (Sesame Plus) with a monthly and an annual price. Both are
+  captured verbatim below so the profile reflects what Sesame actually publishes rather than
+  omitting the file. Quotas/overages are not applicable to a per-visit healthcare marketplace.
+currency: USD
+plans:
+- name: Pay per visit
+  price: 0
+  currency: USD
+  billing_period: none
+  model: pay-per-use
+  description: >-
+    No membership required. Each appointment is booked at an up-front cash price shown before
+    checkout; Sesame markets visits starting around $34 with no insurance and no surprise
+    billing. Prices vary by service, clinician and region and are listed on each service page.
+  included_quota: null
+  overage: null
+  limits: []
+  source: https://sesamecare.com/
+- name: Sesame Plus (monthly)
+  price: 10.99
+  currency: USD
+  billing_period: month
+  model: subscription
+  description: Membership tier discounting visits across the marketplace.
+  included:
+  - "$10 off all telehealth and primary care visits"
+  - "$10 off when you see a dentist or a specialist in-person"
+  - "Free lab or blood test per year ($65 value)"
+  - Exclusive savings and discounts across 120+ medical services
+  included_quota: null
+  overage: null
+  limits: []
+  source: https://sesamecare.com/join/membership
+- name: Sesame Plus (annual)
+  price: 99
+  currency: USD
+  billing_period: year
+  model: subscription
+  description: Same Sesame Plus benefits billed annually.
+  included:
+  - "$10 off all telehealth and primary care visits"
+  - "$10 off when you see a dentist or a specialist in-person"
+  - "Free lab or blood test per year ($65 value)"
+  - Exclusive savings and discounts across 120+ medical services
+  included_quota: null
+  overage: null
+  limits: []
+  source: https://sesamecare.com/join/membership
+plan_count: 3
+api_plan_count: 0
+x-evidence:
+- url: https://sesamecare.com/join/membership
+  status: 200
+  fetched: '2026-08-15'
