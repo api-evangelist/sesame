@@ -15,6 +15,17 @@ description: Sesame is a direct-to-consumer telehealth marketplace that connects
   general-purpose Node/TypeScript utility packages under the @sesamecare-oss npm scope rather
   than first-party API client SDKs.
 url: https://raw.githubusercontent.com/api-evangelist/sesame/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
