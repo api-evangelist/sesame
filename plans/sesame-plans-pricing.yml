@@ -59,3 +59,29 @@ x-evidence:
 - url: https://sesamecare.com/join/membership
   status: 200
   fetched: '2026-08-15'
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: Pay per visit
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Sesame Plus (monthly)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Sesame Plus (annual)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
