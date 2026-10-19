@@ -1,0 +1,193 @@
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@sesamecare-oss/ai-templating
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@sesamecare-oss/ai-templating'
+      version: 2.5.0
+      released: '2026-10-14'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/ai-templating
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/async-pool'
+      version: 1.0.5
+      released: '2026-01-10'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/async-pool
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/async-rule-evaluator'
+      version: 1.2.0
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/async-rule-evaluator
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/check-package-changes'
+      version: 1.1.1
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/check-package-changes
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/confit'
+      version: 3.1.0
+      released: '2026-08-21'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/confit
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/fetch-with-token'
+      version: 1.0.1
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/fetch-with-token
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/multi-source-pager'
+      version: 4.1.0
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/multi-source-pager
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/opentelemetry-node-metrics'
+      version: 3.0.0
+      released: '2026-02-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/opentelemetry-node-metrics
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/playwright-prometheus-reporter'
+      version: 1.0.6
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/playwright-prometheus-reporter
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/rate-limit'
+      version: 3.0.1
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/rate-limit
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/redis'
+      version: 1.1.2
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/redis
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/redlock'
+      version: 1.4.0
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/redlock
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/rule-evaluator'
+      version: 1.0.0
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/rule-evaluator
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/to-clickhouse'
+      version: 1.10.3
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/to-clickhouse
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/typia-standalone-validator'
+      version: 2.0.6
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/typia-standalone-validator
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/us-postal-codes'
+      version: 2.0.2
+      released: '2026-04-10'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/us-postal-codes
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    - name: '@sesamecare-oss/xml-deep-merge'
+      version: 1.1.3
+      released: '2025-12-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@sesamecare-oss/xml-deep-merge
+      repo_leg: github-org:sesamecare
+      publisher_leg: email:sesamecare.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
